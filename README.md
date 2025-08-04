@@ -1,0 +1,2 @@
+# SchoolManagementSystem
+Ada school exercice
