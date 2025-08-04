@@ -1,0 +1,25 @@
+public class Curso {
+    private final int id;
+    private String nombre;
+    private String descripcion;
+    private int numeroCreditos;
+    private String version;
+
+    public Curso(int id, String nombre, String descripcion,
+                 int numeroCreditos, String version) {
+        this.id = id;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.numeroCreditos = numeroCreditos;
+        this.version = version;
+    }
+
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+    public int getNumeroCreditos() { return numeroCreditos; }
+
+    @Override
+    public String toString() {
+        return "%d - %s (%d créditos, v%s)".formatted(id, nombre, numeroCreditos, version);
+    }
+}
